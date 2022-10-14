@@ -15,7 +15,7 @@ jobs:
       - name: Build an image from Dockerfile
         id: image_build
         run: |
-          docker build -t <your image> --iidfile=image_id.out .
+          docker build -t ubuntu:22.04 --iidfile=image_id.out .
           echo ::set-output name=image_id::$(cat image_id.out)
 
       - name: Run Uptycs vulnerability scanner
