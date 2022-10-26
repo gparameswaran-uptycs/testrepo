@@ -19,7 +19,7 @@ jobs:
           echo ::set-output name=image_id::$(cat image_id.out)
 
       - name: Run Uptycs vulnerability scanner
-        uses: uptycslabs/uptycs-action@uptycs-ci
+        uses: uptycslabs/uptycs-action@main
         with:
           image-id: ${{ steps.image_build.outputs.image_id }}
           # It's recommended to store both the uptycs-secret and the
