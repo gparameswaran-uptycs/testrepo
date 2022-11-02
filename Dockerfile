@@ -1,1 +1,3 @@
-FROM ubuntu:20.04
+FROM gcr.io/google-samples/hello-app
+
+Run apk update
