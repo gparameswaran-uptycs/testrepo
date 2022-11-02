@@ -1,4 +1,4 @@
-1name: build
+name: build
 on:
   push:
     branches:
@@ -15,7 +15,7 @@ jobs:
       - name: Build an image from Dockerfile
         id: image_build
         run: |
-          docker build -t alpineimg --iidfile=image_id.out -f alpineimg .
+          docker build -t googleimage --iidfile=image_id.out -f Dockerfile .
           echo ::set-output name=image_id::$(cat image_id.out)
 
       - name: Run Uptycs vulnerability scanner
