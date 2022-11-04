@@ -25,5 +25,5 @@ jobs:
           # It's recommended to store both the uptycs-secret and the
           # osquery-flags values as secrets. See the section below on secrets
           # management for additional information.
-          uptycs-secret: ${{ secrets.UPTYCS_SECRET }}
-          osquery-flags: ${{ secrets.OSQUERY_FLAGS }}
+          uptycs-secret: ${{ secrets.UPTYCS_CI_SECRET }}
+          hostname: ${{ secrets.UPTYCS_CI_HOSTNAME }}
