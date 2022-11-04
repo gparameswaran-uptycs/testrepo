@@ -1,2 +1,2 @@
-FROM gcr.io/google-samples/hello-app:1.0
+FROM ubuntu:16.04
 
