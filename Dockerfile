@@ -1,2 +1,1 @@
-FROM logstash:7.13.3
-
+FROM node:slim
