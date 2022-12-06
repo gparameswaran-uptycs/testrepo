@@ -1,1 +1,1 @@
-FROM python:3.9.15-alpine
+FROM logstash:7.14.2
