@@ -1,1 +1,1 @@
-FROM centos:7
+FROM logstash:7.13.3
